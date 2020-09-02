@@ -8,5 +8,6 @@ import static com.codeborne.selenide.Selenide.$x;
 
 @Getter
 public class MainPage {
-    private SelenideElement signInButton = $x("//header[@id = 'header']//div[@class = 'header_user_info']");
+    private SelenideElement buttonSignIn = $x("//header[@id = 'header']//div[@class = 'header_user_info']");
+    private SelenideElement buttonWomenInCatalogue = $x("//a[@title='Women']");
 }

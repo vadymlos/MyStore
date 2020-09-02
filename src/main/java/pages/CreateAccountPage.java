@@ -15,6 +15,7 @@ public class CreateAccountPage {
     private final SelenideElement customerPassword = $("#passwd");
     private final SelenideElement customerFirstNameAddressBlock = $x("//div[@class='account_creation']//input[@id='firstname']");
     private final SelenideElement customerLastNameAddressBlock = $x("//div[@class='account_creation']//input[@id='lastname']");
+    private final SelenideElement customerCompany = $("#company");
     private final SelenideElement customerAddress = $("#address1");
     private final SelenideElement customerCity = $("#city");
     private final SelenideElement customerState = $x("//select[@id='id_state']//option[@value='5']");
