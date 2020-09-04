@@ -19,7 +19,7 @@ public class CreateAccountPage {
     private final SelenideElement customerAddress = $("#address1");
     private final SelenideElement customerCity = $("#city");
     private final SelenideElement customerState = $x("//select[@id='id_state']//option[@value='5']");
-    private final SelenideElement customerPostcode = $x("//input[@id='postcode']");
+    private final SelenideElement customerZip = $x("//input[@id='postcode']");
     private final SelenideElement customerCountry = $x("//select[@id='id_country']//option[@value='21']");
     private final SelenideElement customerMobilePhone = $("#phone_mobile");
     private final SelenideElement customerAddressAlias = $("#alias");
