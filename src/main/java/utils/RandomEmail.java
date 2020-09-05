@@ -2,8 +2,8 @@ package utils;
 
 import java.util.Date;
 
-public class RandomName {
+public class RandomEmail {
     public static String randomUserName(){
-        return "Vadym" + new Date().getTime();
+        return "Work" + new Date().getTime();
     }
 }

@@ -1,4 +1,4 @@
-package steps;
+package steps.UI;
 
 import com.codeborne.selenide.Condition;
 import entity.NewUser;

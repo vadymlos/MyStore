@@ -33,6 +33,18 @@ public class NewUser {
         this.addressAlias = addressAlias;
     }
 
+    public NewUser(String firstName, String lastName, String password, String company, String address, String city, String zip, String mobPhone, String addressAlias) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.password = password;
+        this.company = company;
+        this.address = address;
+        this.city = city;
+        this.zip = zip;
+        this.mobPhone = mobPhone;
+        this.addressAlias = addressAlias;
+    }
+
     public NewUser(String email) {
         this.email = email;
     }

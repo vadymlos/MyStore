@@ -13,7 +13,7 @@ public class BaseTest {
 
     @BeforeClass
     public void BeforeMethod(){
-        Configuration.baseUrl = "http://172.32.64.34";
+        Configuration.baseUrl = "http://automationpractice.com/index.php";
         Configuration.holdBrowserOpen = true;
         Configuration.browser = SelenoidDriverProvider.class.getName();
         Configuration.fastSetValue = true;
