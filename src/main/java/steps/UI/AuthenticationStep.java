@@ -9,7 +9,7 @@ import pages.MainPage;
 public class AuthenticationStep {
     private AuthenticationPage authenticationPage = new AuthenticationPage();
 
-    @Step("Fill email field")
+    @Step("Fill email field for create account")
     public void fillEmailField(NewUser newUser){
         authenticationPage.getEmailForCreateAccount().setValue(newUser.getEmail());
     }
@@ -17,5 +17,18 @@ public class AuthenticationStep {
     @Step("Click the button Create an account")
     public void clickCreateAnAccountButton(){
         authenticationPage.getButtonCreateAnAccount().click();
+    }
+
+    @Step("Fill email field for Sign in")
+    public void fillEmailFieldForLogin(NewUser newUser){
+        authenticationPage.getEmailForLogin().setValue(newUser.getEmail());
+    }
+    @Step("Fill password field for Sign in")
+    public void fillPasswordFieldForLogin(NewUser newUser){
+        authenticationPage.getPasswordForLogin().setValue(newUser.getPassword());
+    }
+    @Step("Click the button Sign in")
+    public void clickSignInButton(){
+        authenticationPage.getButtonSignIn().click();
     }
 }

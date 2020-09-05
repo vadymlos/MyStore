@@ -11,4 +11,9 @@ public class MainStep {
     public void clickOnSignInButton(){
         mainPage.getButtonSignIn().waitUntil(Condition.visible.because("Registration button not visible"), 5000).click();
     }
+
+    @Step("Click on SignIn button on main page")
+    public void clickOnSignOutButton(){
+        mainPage.getButtonSignOut().click();
+    }
 }
