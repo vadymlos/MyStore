@@ -24,7 +24,6 @@ public class RegistrationTest extends BaseTest{
         authenticationStep.clickCreateAnAccountButton();
         createAccountStep.fillCreateAccountForm(newUser);
         createAccountStep.chooseState();
-        createAccountStep.chooseCountry();
         createAccountStep.clickRegisterButton();
         myAccountStep.checkTextMyAccount();
         myAccountStep.checkTextMyPersonalInformation();

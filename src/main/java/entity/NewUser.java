@@ -18,21 +18,6 @@ public class NewUser {
     private String mobPhone;
     private String addressAlias;
 
-    public NewUser(String email, String firstName, String lastName, String password, String company, String address, String city, String state, String zip, String country, String mobPhone, String addressAlias) {
-        this.email = email;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.password = password;
-        this.company = company;
-        this.address = address;
-        this.city = city;
-        this.state = state;
-        this.zip = zip;
-        this.country = country;
-        this.mobPhone = mobPhone;
-        this.addressAlias = addressAlias;
-    }
-
     public NewUser(String firstName, String lastName, String password, String company, String address, String city, String zip, String mobPhone, String addressAlias) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -47,5 +32,10 @@ public class NewUser {
 
     public NewUser(String email) {
         this.email = email;
+    }
+
+    public NewUser(String email, String password) {
+        this.email = email;
+        this.password = password;
     }
 }

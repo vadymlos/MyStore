@@ -27,13 +27,13 @@ public class CreateAccountStep {
     @Step("Choose state in create account form")
     public void chooseState(){
         createAccountPage.getCustomerStateDropDown().click();
-        createAccountPage.getCustomerState().click();
+        createAccountPage.getCustomerStateItem().click();
     }
 
     @Step("Choose country in create account form")
     public void chooseCountry(){
         createAccountPage.getCustomerCountryDropDown().click();
-        createAccountPage.getCustomerCountry().click();
+        createAccountPage.getCustomerCountryItem().click();
     }
 
     @Step("Click the button Register")

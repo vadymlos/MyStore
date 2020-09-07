@@ -19,10 +19,10 @@ public class CreateAccountPage {
     private final SelenideElement customerAddress = $("#address1");
     private final SelenideElement customerCity = $("#city");
     private final SelenideElement customerStateDropDown = $("#id_state");
-    private final SelenideElement customerState = $x("//select[@id='id_state']//option[@value='5']");
+    private final SelenideElement customerStateItem = $(byText("California"));
     private final SelenideElement customerZip = $x("//input[@id='postcode']");
     private final SelenideElement customerCountryDropDown = $("#id_country");
-    private final SelenideElement customerCountry = $x("//select[@id='id_country']//option[@value='21']");
+    private final SelenideElement customerCountryItem = $(byText("United States"));
     private final SelenideElement customerMobilePhone = $("#phone_mobile");
     private final SelenideElement customerAddressAlias = $("#alias");
     private final SelenideElement customerRegisterButton = $("#submitAccount");
