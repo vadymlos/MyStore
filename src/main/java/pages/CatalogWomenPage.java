@@ -4,9 +4,12 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$x;
 import com.codeborne.selenide.SelenideElement;
+import org.openqa.selenium.By;
 
 @Getter
 public class CatalogWomenPage {
-    private SelenideElement productInCatalog = $x("//li[@class='ajax_block_product col-xs-12 col-sm-6 col-md-4 last-in-line first-item-of-tablet-line last-item-of-mobile-line']//img[@title='Printed Dress']");
-    private SelenideElement buttonAddToCart = productInCatalog.find("[title='Add to cart']");
+    private SelenideElement productInCatalog = $x("(//img[@title='Printed Dress'])[1]");
+    private SelenideElement buttonAddToCart = $x("(//div[@class='button-container']//a[@class='button ajax_add_to_cart_button btn btn-default'])[3]");
+//    private SelenideElement buttonAddToCart = productInCatalog.find((By) $x("(//a[@title='Add to cart'])[1]"));
+//    private SelenideElement buttonAddToCart = productInCatalog.find((By) $x("((//a[@class='button ajax_add_to_cart_button btn btn-default'])[3]"));
 }

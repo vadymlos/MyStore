@@ -1,5 +1,6 @@
 package steps.UI;
 
+import com.codeborne.selenide.Condition;
 import io.qameta.allure.Step;
 import pages.CartPage;
 import pages.CatalogWomenPage;

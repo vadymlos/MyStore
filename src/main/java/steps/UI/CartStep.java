@@ -9,7 +9,7 @@ public class CartStep {
 
     @Step("Check quantity in the cart")
     public void checkProductInCart(){
-        cartPage.getQuantityOfProducts().shouldHave(Condition.cssValue("value", "1"));
+        cartPage.getQuantityOfProducts().shouldHave(Condition.attribute("value", "1"));
     }
 
     @Step("Check available in stock")

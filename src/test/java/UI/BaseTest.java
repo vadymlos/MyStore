@@ -17,9 +17,11 @@ public class BaseTest {
     public void BeforeMethod(){
         Configuration.baseUrl = "http://automationpractice.com";
         Configuration.holdBrowserOpen = true;
-        Configuration.browser = SelenoidDriverProvider.class.getName();
+        Configuration.browser = "chrome"; //SelenoidDriverProvider.class.getName();
+        Configuration.browserVersion = "85";
         Configuration.fastSetValue = true;
-        Configuration.driverManagerEnabled = false;
+        Configuration.driverManagerEnabled = true;
+        Configuration.timeout = 7000;
         open("/index.php");
 //        RestAssured.port = 80;
     }

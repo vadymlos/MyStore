@@ -16,4 +16,9 @@ public class MainStep {
     public void clickOnSignOutButton(){
         mainPage.getButtonSignOut().click();
     }
+
+    @Step("Click the block of catalog Women")
+    public void clickBlockOfCatalogWomen(){
+        mainPage.getBlockWomenInCatalogue().click();
+    }
 }
