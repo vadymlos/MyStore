@@ -38,4 +38,27 @@ public class NewUser {
         this.email = email;
         this.password = password;
     }
+
+    public NewUser(String email, String firstName, String lastName, String password, String company, String address, String city, String state, String zip, String country, String mobPhone, String addressAlias) {
+        this.email = email;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.password = password;
+        this.company = company;
+        this.address = address;
+        this.city = city;
+        this.state = state;
+        this.zip = zip;
+        this.country = country;
+        this.mobPhone = mobPhone;
+        this.addressAlias = addressAlias;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
 }
