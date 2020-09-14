@@ -42,7 +42,7 @@ public class ApiStep {
     }
 
     @Step("Check order quantity")
-    public Response<ItemProductInCart> checkQuantityOfProductsInCart() throws IOException {
+    public Response<List<ItemProductInCart>> checkQuantityOfProductsInCart() throws IOException {
         return retrofit.create(UserService.class).checkQuantityOfProductInOrder().execute();
     }
 

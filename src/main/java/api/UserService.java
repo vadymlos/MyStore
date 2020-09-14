@@ -28,5 +28,5 @@ public interface UserService {
     Call<ResponseBody> addProductToCartForLogInUser(@Body Product product, @Header("Cookie") String cookie);
 
     @GET("?controller=order")
-    Call<ItemProductInCart> checkQuantityOfProductInOrder();
+    Call<List<ItemProductInCart>> checkQuantityOfProductInOrder();
 }

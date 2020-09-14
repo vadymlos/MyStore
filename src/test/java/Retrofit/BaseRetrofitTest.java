@@ -1,5 +1,6 @@
 package Retrofit;
 
+import api.MyCookieJar;
 import com.codeborne.selenide.Configuration;
 import com.google.gson.GsonBuilder;
 import okhttp3.OkHttpClient;
@@ -20,10 +21,10 @@ public class BaseRetrofitTest {
 //        Configuration.fastSetValue = true;
 //        Configuration.driverManagerEnabled = true;
 
-//        OkHttpClient client = new OkHttpClient.Builder()
-//                .cookieJar(new MyCookieJar())
-//                .build();
-        retrofit = new Retrofit.Builder()//.client(client)
+        OkHttpClient client = new OkHttpClient.Builder()
+                .cookieJar(new MyCookieJar())
+                .build();
+        retrofit = new Retrofit.Builder().client(client)
                 .baseUrl("http://automationpractice.com/")
                 .addConverterFactory(GsonConverterFactory.create(new GsonBuilder().setLenient().create()))
                 .build();

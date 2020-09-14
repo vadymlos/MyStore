@@ -1,8 +1,12 @@
 package steps.UI;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.WebDriverRunner;
 import io.qameta.allure.Step;
+import okhttp3.Cookie;
 import pages.MainPage;
+
+import java.util.List;
 
 public class MainStep {
     private MainPage mainPage = new MainPage();
@@ -20,5 +24,10 @@ public class MainStep {
     @Step("Click the block of catalog Women")
     public void clickBlockOfCatalogWomen(){
         mainPage.getBlockWomenInCatalogue().click();
+    }
+
+    @Step("Set cookie")
+    public void setUserCookie(List<Cookie> cookies){
+        WebDriverRunner.getWebDriver().manage().addCookie(cookies.get(0));
     }
 }
