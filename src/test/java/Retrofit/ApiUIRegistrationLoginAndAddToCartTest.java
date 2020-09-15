@@ -50,7 +50,7 @@ public class ApiUIRegistrationLoginAndAddToCartTest extends BaseRetrofitTest{
 
         open("/index.php");
         apiStep = new ApiStep(retrofit);
-        mainStep.setUserCookie(mainStep.setUserCookie(cookieSet);
+//        mainStep.setUserCookie(mainStep.setUserCookie(cookieSet);
     }
 
     @Test(description = "Add product to cart")

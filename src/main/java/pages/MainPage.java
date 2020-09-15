@@ -11,4 +11,5 @@ public class MainPage {
     private SelenideElement buttonSignIn = $x("//header[@id = 'header']//div[@class = 'header_user_info']");
     private SelenideElement blockWomenInCatalogue = $x("//a[@title='Women']");
     private SelenideElement buttonSignOut = $x("//div[@class='header_user_info']//a[@class='logout']");
+    private SelenideElement buttonBestSeller = $x("//ul[@id='home-page-tabs']//a[@class = 'blockbestsellers']");
 }

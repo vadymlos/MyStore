@@ -26,8 +26,8 @@ public class MainStep {
         mainPage.getBlockWomenInCatalogue().click();
     }
 
-    @Step("Set cookie")
-    public void setUserCookie(List<Cookie> cookies){
-        WebDriverRunner.getWebDriver().manage().addCookie(cookies.get(0));
-    }
+//    @Step("Set cookie")
+//    public void setUserCookie(List<Cookie> cookies){
+//        WebDriverRunner.getWebDriver().manage().addCookie(cookies.get(0));
+//    }
 }
