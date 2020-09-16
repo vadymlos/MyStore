@@ -30,4 +30,17 @@ public class MainStep {
 //    public void setUserCookie(List<Cookie> cookies){
 //        WebDriverRunner.getWebDriver().manage().addCookie(cookies.get(0));
 //    }
+    @Step("Click the button Best Sellers")
+    public void clickTheButtonBestSellers(){
+        mainPage.getButtonBestSeller().click();
+    }
+
+    @Step("Hover cursor on product")
+    public void hoverCursorOnProduct(){
+        mainPage.getButtonMoreOnProduct().hover();
+    }
+    @Step("Click the button More")
+    public void clickTheButtonMore(){
+        mainPage.getButtonMoreOnProduct().click();
+    }
 }
