@@ -31,4 +31,14 @@ public class ProductStep {
     public void checkPresenceSelectSize(){
         productPage.getSelectSize().shouldHave(Condition.attribute("name", "group_1"));
     }
+
+    @Step("Click on link add to wishlist")
+    public void clickOnAddToWishList(){
+        productPage.getButtonAddToWishList().click();
+    }
+
+    @Step("Check pop up add to wishlist")
+    public void checkPopUpAddToWishlist(){
+
+    }
 }

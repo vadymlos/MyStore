@@ -14,4 +14,6 @@ public class ProductPage {
     private SelenideElement inputQuantity = $x("//p[@id = 'quantity_wanted_p']//input[@id='quantity_wanted']");
     private SelenideElement selectSize = $x("//div[@id = 'uniform-group_1']//select[@id='group_1']");
     private SelenideElement buttonReview = $("#new_comment_tab_btn");
+    private SelenideElement popUpAddToWishlist = $(".fancybox-error");
+    private SelenideElement buttonCloseOnPopUpAddToWishlist = $x("//a[@class='fancybox-item fancybox-close']");
 }
