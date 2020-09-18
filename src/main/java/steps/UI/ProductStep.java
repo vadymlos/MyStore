@@ -9,7 +9,7 @@ public class ProductStep {
 
     @Step("Check model of product")
     public void checkModelOfProduct(){
-        productPage.getBlockModel().shouldHave(Condition.attribute("label", "Model"));
+        productPage.getBlockModel().shouldHave(Condition.text("Model"));
     }
 
     @Step("Check presence link add to wishlist")
@@ -19,7 +19,7 @@ public class ProductStep {
 
     @Step("Check presence button add to cart")
     public void checkPresenceButtonAddToCart(){
-        productPage.getButtonAddToCart().shouldHave(Condition.attribute("button", "Add to cart"));
+        productPage.getButtonAddToCart().shouldHave(Condition.text("Add to cart"));
     }
 
     @Step("Check presence input Quantity")
@@ -27,5 +27,8 @@ public class ProductStep {
         productPage.getInputQuantity().shouldHave(Condition.attribute("value", "1"));
     }
 
-
+    @Step("Check presence select Size")
+    public void checkPresenceSelectSize(){
+        productPage.getSelectSize().shouldHave(Condition.attribute("name", "group_1"));
+    }
 }

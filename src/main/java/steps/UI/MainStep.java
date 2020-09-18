@@ -37,10 +37,10 @@ public class MainStep {
 
     @Step("Hover cursor on product")
     public void hoverCursorOnProduct(){
-        mainPage.getButtonMoreOnProduct().hover();
+        mainPage.getProductBlock().hover();
     }
     @Step("Click the button More")
     public void clickTheButtonMore(){
-        mainPage.getButtonMoreOnProduct().click();
+        mainPage.getButtonMoreOnProduct().waitUntil(Condition.visible.because("Registration button not visible"), 5000).click();
     }
 }
