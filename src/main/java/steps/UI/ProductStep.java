@@ -39,6 +39,11 @@ public class ProductStep {
 
     @Step("Check pop up add to wishlist")
     public void checkPopUpAddToWishlist(){
+        productPage.getPopUpAddToWishlist().shouldHave(Condition.text("Added to your wishlist."));
+    }
 
+    @Step("Click the button close on wishlist pop up")
+    public void clickTheButtonCloseOnWishlistPopUp(){
+        productPage.getButtonCloseOnPopUpAddToWishlist().click();
     }
 }

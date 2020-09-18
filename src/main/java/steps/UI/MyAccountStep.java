@@ -20,4 +20,9 @@ public class MyAccountStep {
     public void checkTextSignOut(){
         myAccountPage.getSignOutText().shouldHave(Condition.text("Sign out"));
     }
+
+    @Step("Click the button my wishlist")
+    public void clickTheButtonMyWishlist(){
+        myAccountPage.getButtonMyWishlists().click();
+    }
 }
