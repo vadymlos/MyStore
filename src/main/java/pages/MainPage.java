@@ -14,4 +14,5 @@ public class MainPage {
     private SelenideElement buttonBestSeller = $x("//ul[@id='home-page-tabs']//a[@class = 'blockbestsellers']");
     private SelenideElement productBlock = $x("(//ul[@id='blockbestsellers']//div[@class='product-container'])[1]");
     private SelenideElement buttonMoreOnProduct = $x("(//ul[@id='blockbestsellers']//a[@title = 'View'])[1]");
+    private SelenideElement buttonAccount = $(".account");
 }

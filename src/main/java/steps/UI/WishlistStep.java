@@ -19,6 +19,6 @@ public class WishlistStep {
 
     @Step("Check product in wishlist")
     public void checkProductInWishlist(){
-        wishlistPage.getCheckProductInWishlist().shouldHave(Condition.text("Printed Dress"));
+        wishlistPage.getCheckProductInWishlist().shouldHave(Condition.text("Printed Chiffon Dress"));
     }
 }

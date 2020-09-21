@@ -9,4 +9,5 @@ import com.codeborne.selenide.SelenideElement;
 public class CartPage {
     private SelenideElement quantityOfProducts = $x("//td[@class='cart_quantity text-center']//input[@class='cart_quantity_input form-control grey']");
     private SelenideElement availableInStock = $x("//td[@class='cart_avail']//span[@class='label label-success']");
+    private SelenideElement buttonProceedToCheckout = $x("//p[@class='cart_navigation clearfix']//a[@title='Proceed to checkout']");
 }

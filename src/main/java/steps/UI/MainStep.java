@@ -43,4 +43,9 @@ public class MainStep {
     public void clickTheButtonMore(){
         mainPage.getButtonMoreOnProduct().waitUntil(Condition.visible.because("Registration button not visible"), 5000).click();
     }
+
+    @Step("Click the button account")
+    public void clickTheButtonAccount(){
+        mainPage.getButtonAccount().click();
+    }
 }

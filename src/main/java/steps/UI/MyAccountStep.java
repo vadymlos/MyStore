@@ -25,4 +25,9 @@ public class MyAccountStep {
     public void clickTheButtonMyWishlist(){
         myAccountPage.getButtonMyWishlists().click();
     }
+
+    @Step("Click the button return to home page")
+    public void clickTheButtonReturnToHomePage(){
+        myAccountPage.getButtonReturnToHomePage().click();
+    }
 }
