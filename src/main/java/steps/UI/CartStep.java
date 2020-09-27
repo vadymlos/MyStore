@@ -5,9 +5,8 @@ import entity.NewUser;
 import io.qameta.allure.Step;
 import pages.CartPage;
 
-public class CartStep extends NewUser {
+public class CartStep {
     CartPage cartPage = new CartPage();
-    NewUser newUser = new NewUser();
 
     @Step("Check quantity in the cart")
     public void checkProductInCart(){
@@ -26,22 +25,22 @@ public class CartStep extends NewUser {
 
     @Step("Check address street on address page")
     public void checkAddressStreet(String string){
-        cartPage.getAddressStreet().shouldHave(Condition.text(getAddress()));
+        cartPage.getAddressStreet().shouldHave(Condition.text(string));
     }
 
     @Step("Check city on address page")
     public void checkAddressCity(String string){
-        cartPage.getAddressState().shouldHave(Condition.text(getCity()));
+        cartPage.getAddressState().shouldHave(Condition.text(string));
     }
 
     @Step("Check country on address page")
     public void checkAddressCountry(String string){
-        cartPage.getAddressState().shouldHave(Condition.text(getCountry()));
+        cartPage.getAddressCountry().shouldHave(Condition.text(string));
     }
 
     @Step("Check mobile phone on address page")
     public void checkAddressMobilePhone(String string){
-        cartPage.getAddressState().shouldHave(Condition.text(getMobPhone()));
+        cartPage.getAddressPhone().shouldHave(Condition.text(string));
     }
 
     @Step("Click the button proceed to checkout on address page")
@@ -51,12 +50,12 @@ public class CartStep extends NewUser {
 
     @Step("Check radio button delivery")
     public void checkRadioButtonDelivery(){
-        cartPage.getRadioDelivery().shouldHave(Condition.attribute("checked", "checked"));
+        cartPage.getRadioDelivery().shouldHave(Condition.attribute("checked", "true"));
     }
 
     @Step("Activate checkbox agreement to term of service")
     public void activateCheckboxAgreementOfService(){
-        cartPage.getCheckboxAgreeService().exists();
+        cartPage.getCheckboxAgreeService().click();
     }
 
     @Step("Click the button proceed to checkout on shipping page")
@@ -64,5 +63,23 @@ public class CartStep extends NewUser {
         cartPage.getButtonProceedToCheckoutShipping().click();
     }
 
+    @Step("Click the button Pay by bank wire")
+    public void clickButtonPayBankWire(){
+        cartPage.getButtonPayByBankWire().click();
+    }
 
+    @Step("Check text block Bank-Wire Payment")
+    public void checkTextBlockBankWirePayment(){
+        cartPage.getTextBlockBankWirePayment().shouldHave(Condition.text("Bank-wire payment."));
+    }
+
+    @Step("Click the button I confirm my order")
+    public void clickButtonConfirmMyOrder(){
+        cartPage.getButtonConfirmMyOrder().click();
+    }
+
+    @Step("Click the link Back to orders")
+    public void clickLinkBackToOrders(){
+        cartPage.getLinkBackToOrders().click();
+    }
 }
