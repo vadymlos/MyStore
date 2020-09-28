@@ -12,4 +12,5 @@ public class MyAccountPage {
     private SelenideElement signOutText = $(byText("Sign out"));
     private SelenideElement buttonMyWishlists = $x("//li[@class='lnk_wishlist']//a[@title='My wishlists']");
     private SelenideElement buttonReturnToHomePage = $x("//a[@title='Return to Home']");
+    private SelenideElement buttonContactUs = $("#contact-link");
 }

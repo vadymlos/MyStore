@@ -10,6 +10,4 @@ import org.openqa.selenium.By;
 public class CatalogWomenPage {
     private SelenideElement productInCatalog = $x("(//img[@title='Printed Dress'])[1]");
     private SelenideElement buttonAddToCart = $x("(//div[@class='button-container']//a[@class='button ajax_add_to_cart_button btn btn-default'])[3]");
-//    private SelenideElement buttonAddToCart = productInCatalog.find((By) $x("(//a[@title='Add to cart'])[1]"));
-//    private SelenideElement buttonAddToCart = productInCatalog.find((By) $x("((//a[@class='button ajax_add_to_cart_button btn btn-default'])[3]"));
 }
