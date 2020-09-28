@@ -29,8 +29,10 @@ public class CartStep {
     }
 
     @Step("Check city on address page")
-    public void checkAddressCity(String string){
-        cartPage.getAddressState().shouldHave(Condition.text(string));
+    public void checkAddressCity(String city, String zip){
+//        cartPage.getAddressState().shouldHave(Condition.text(city + ", " + state + " " + zip));
+        cartPage.getAddressState().shouldHave(Condition.text(city));
+        cartPage.getAddressState().shouldHave(Condition.text(zip));
     }
 
     @Step("Check country on address page")

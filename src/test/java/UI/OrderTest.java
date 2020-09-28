@@ -50,7 +50,7 @@ public class OrderTest extends BaseTest{
     public void shouldCanOrderProduct(){
         cartStep.clickButtonProceedToCheckoutSummaryPage();
         cartStep.checkAddressStreet(newUser.getAddress());
-        cartStep.checkAddressCity(newUser.getCity());
+        cartStep.checkAddressCity(newUser.getCity(), newUser.getZip());
         cartStep.checkAddressCountry(country);
         cartStep.checkAddressMobilePhone(newUser.getMobPhone());
         cartStep.clickButtonProceedToCheckoutOnAddressPage();
@@ -63,5 +63,4 @@ public class OrderTest extends BaseTest{
         cartStep.clickLinkBackToOrders();
         orderHistoryStep.checkOrderStatus();
     }
-
 }
