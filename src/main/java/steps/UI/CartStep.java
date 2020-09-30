@@ -84,4 +84,9 @@ public class CartStep {
     public void clickLinkBackToOrders(){
         cartPage.getLinkBackToOrders().click();
     }
+
+    @Step("Click the button contact us")
+    public void clickButtonContactUs(){
+        cartPage.getButtonContactUs().click();
+    }
 }

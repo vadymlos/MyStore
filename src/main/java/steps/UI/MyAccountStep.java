@@ -30,4 +30,9 @@ public class MyAccountStep {
     public void clickTheButtonReturnToHomePage(){
         myAccountPage.getButtonReturnToHomePage().click();
     }
+
+    @Step("Click the button contact us")
+    public void clickButtonContactUs(){
+        myAccountPage.getButtonContactUs().click();
+    }
 }

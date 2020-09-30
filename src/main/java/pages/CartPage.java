@@ -22,4 +22,5 @@ public class CartPage {
     private SelenideElement textBlockBankWirePayment = $x("//div[@class='box cheque-box']//h3[@class='page-subheading']");
     private SelenideElement buttonConfirmMyOrder = $x("//p[@class='cart_navigation clearfix']//button[@type='submit']");
     private SelenideElement linkBackToOrders = $x("//p[@class='cart_navigation exclusive']//a[@title='Back to orders']");
+    private SelenideElement buttonContactUs = $("#contact-link");
 }
